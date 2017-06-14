@@ -1,5 +1,5 @@
 # Poxedex
-_Leccion 42 | Ejercicio enunciado
+_Leccion 42 | Ejercicio enunciado_
 ## Requerimientos
 - [x] Usar JSON formatter o Postman para obtener la información de PokeApi.
 - [x] PokeAPI no da imagenes de los pokemon, solo stats, esas tendrás que conseguirla tú.
