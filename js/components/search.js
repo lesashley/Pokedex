@@ -12,12 +12,12 @@ const Search = (update) => {
   section.append(containerInput);
   section.append(containerImg);
 
-  state.pokemon.forEach((pokemon)=>{
-    containerImg.append(PokeItem(pokemon,update));
-  })
+  // state.pokemon.forEach((pokemon)=>{
+  //   containerImg.append(PokeItem(pokemon,update));
+  // })
 
   input.keyup(function () {
-    const pokeSelect  = filterByName(state.stations, $(this).val(),update);
+    const pokeSelect  = filterByName(state.pokemon.results, $(this).val(),update);
     if (pokeSelect.length != 0) {
       reRender(containerImg,pokeSelect,update);
     }
@@ -34,7 +34,7 @@ const PokeItem = (pokemon, update) => {
   const icon1 = $('<i>poke</i>');
   const icon2 = $('<i>heart</i>');
   const icon3 = $('<i>flecha</i>');
-  const name = $(`<p>${pokemon.pokemon_species.name}</p>`);
+  const name = $(`<p>${pokemon.results.name}</p>`);
 
 
   divImg.append(img);
