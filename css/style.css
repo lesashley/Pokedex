@@ -1,0 +1,38 @@
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+.box-input{
+  position: relative;
+}
+/*.box-input input[type :"text"]{
+  padding-left: 50px;
+}*/
+.search{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.az{
+  display: inline-block;
+  background-color: rgb(26, 89, 33);
+  float: right;
+  color: #fff;
+}
+.box{
+  padding: 10px;
+}
+.box-gray{
+  background-color: rgb(233, 233, 233);
+  margin-bottom: 20px;
+  /*position: relative;*/
+}
+.box-img{
+  padding: 10px;
+  text-align: center;
+}
+.box-img img{
+  height:130px;
+}
+.div-absolute{
+  background-image: url();
+}

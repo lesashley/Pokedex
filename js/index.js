@@ -6,7 +6,6 @@ const render = (root,data) =>{
   wrapper.append(Header());
   wrapper.append(Search())
 
-
   root.append(wrapper);
 }
 
@@ -21,8 +20,7 @@ $( _ => {
     const root = $("#root");
     state.pokemon=data;
     console.log(typeof(state.pokemon));
-    console.log(state.pokemon.results[1].name);
-    // console.log(state.pokemon.pokemon_entries.pokemon_species.name);
+    console.log(state.pokemon.pokemon_entries[1].entry_number);
     render(root,data);
   });
 })
