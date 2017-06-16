@@ -1,12 +1,19 @@
-html {
-  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+@font-face {
+  font-family: 'Flexo';
+  src: url("../fonts/Flexo/Flexo-Regular.otf");
+}
+* {
+  font-family: 'Flexo';
+}
+h1{
+  color: #eb6363 ;
 }
 .box-input{
   position: relative;
 }
-/*.box-input input[type :"text"]{
+input[type:text]{
   padding-left: 50px;
-}*/
+}
 .search{
   position: absolute;
   left: 5px;
@@ -17,6 +24,8 @@ html {
   background-color: rgb(26, 89, 33);
   float: right;
   color: #fff;
+  width: 60px;
+  text-align: center;
 }
 .box{
   padding: 10px;
@@ -24,6 +33,7 @@ html {
 .box-gray{
   background-color: rgb(233, 233, 233);
   margin-bottom: 20px;
+  padding-top: 10px;
   /*position: relative;*/
 }
 .box-img{
@@ -34,5 +44,20 @@ html {
   height:130px;
 }
 .div-absolute{
-  background-image: url();
+  background-image: url(../img/trapecio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 10px;
+  background-size: contain;
+  text-align: center;
+}
+.icon-pokemon{
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+}
+.name-pokemon{
+  margin-top: 0;
+  text-transform: capitalize;
 }

@@ -2,12 +2,14 @@ const Search = (update) => {
   const section = $('<section class="container"></section>');
   const containerInput = $('<div class="row box-input"></div>');
   const icon = $('<i class="material-icons search">search</i>');
-  const input = $('<input type="text" class="col s6">');
-  const span = $('<span class="az">A -Z</span>');
+  const divInput = $('<div class ="col s6"></div>');
+  const input = $('<input type="text">');
+  const span = $('<span class="az">A - Z</span>');
   const containerImg = $('<div class="row img"></div>');
 
   containerInput.append(icon);
-  containerInput.append(input);
+  divInput.append(input);
+  containerInput.append(divInput);
   containerInput.append(span);
   section.append(containerInput);
   section.append(containerImg);
@@ -35,10 +37,10 @@ const PokeItem = (pokemon, update) => {
   const divImg = $('<div class="box-img"></div>');
   const img = $(`<img src='http://serebii.net/art/th/${pokemon.entry_number}.png' class="responsive-img"/>`);
   const divInfo = $('<div class="div-absolute"></div>');
-  const icon1 = $('<i>poke</i>');
-  const icon2 = $('<i>heart</i>');
-  const icon3 = $('<i>flecha</i>');
-  const name = $(`<p>${pokemon.pokemon_species.name}</p>`);
+  const icon1 = $('<img src="icon/pokeball_gray.png" class="icon-pokemon"/>');
+  const icon2 = $('<img src="icon/valentines-heart.png" class="icon-pokemon"/>');
+  const icon3 = $('<img src="icon/data.png" class="icon-pokemon"/>');
+  const name = $(`<p class="name-pokemon">${pokemon.pokemon_species.name}</p>`);
 
   divImg.append(img);
   divInfo.append(icon1);
