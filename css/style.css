@@ -11,7 +11,7 @@ h1{
 .box-input{
   position: relative;
 }
-input[type:text]{
+.n{
   padding-left: 50px;
 }
 .search{
@@ -55,9 +55,43 @@ input[type:text]{
 .icon-pokemon{
   width: 20px;
   height: 20px;
-  margin-top: 20px;
+  margin: 20px 5px 0 5px;
 }
 .name-pokemon{
   margin-top: 0;
   text-transform: capitalize;
+}
+.h2-pokemon{
+  display: inline-block;
+  color: black;
+  text-transform: capitalize;
+}
+.modal-close{
+  float: right;
+}
+.div-celeste{
+  background-color: rgb(54, 164, 211);
+  color: #fff;
+  font-size: 0.8rem;
+}
+.div-celeste p{
+  margin-top: 3px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.box-green{
+  background-color: rgb(116, 182, 146);
+  margin-right: 5px;
+  color: #fff;
+}
+.box-orange,
+.box-green{
+  text-transform: capitalize;
+}
+.box-orange{
+  background-color: rgb(242, 154, 82);
+  color: #fff;
+}
+.mt0{
+  margin-top: 0;
 }
