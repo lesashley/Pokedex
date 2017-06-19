@@ -63,6 +63,9 @@ const PokeItem = (pokemon, update) => {
     $.getJSON("http://pokeapi.co/api/v2/pokemon/"+pokemon.entry_number,function(data){
       $('.modal').append(ModalPokemon(data,name, state.selectedPokemon));
 	   });
+     $.getJSON("http://pokeapi.co/api/v2/type/4/",function(data){
+       state.selectedWeakness = data;
+ 	   });
   })
 
   return contImg;
@@ -72,8 +75,5 @@ const reRender = (contentImg,pokemon, update) => {
     contentImg.empty();
     $.each(pokemon, function (index, value) {
       contentImg.append(PokeItem(value,update));
-      if (index == 20) {
-        return false;
-      }
     });
 }

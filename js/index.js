@@ -12,7 +12,8 @@ const render = (root,data) =>{
 const state = {
   pokemon : null,
   selectedPokemon: null,
-  selectedImg: null
+  selectedImg: null,
+  selectedWeakness : null
 };
 
 $( _ => {

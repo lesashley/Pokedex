@@ -4,7 +4,7 @@ const ModalPokemon = (pokemonSelected, name, select) => {
   var habilidades = "", tipos ="", debilidades="";
   let abilities = pokemonSelected.abilities.forEach((e)=>{habilidades += "<p>"+e.ability.name+"</p>";});
   let types = pokemonSelected.types.forEach((e)=>{tipos += "<div class='col s3 box-green'>"+e.type.name+"</div>";});
-  
+  let weakness = state.selectedWeakness.damage_relations.double_damage_from.forEach((e)=>{debilidades += "<div class='col s3 box-orange'>"+e.name+"</div>";})
   const modalContent = $('<div class="modal-content row"></div>');
   const contentTitle = $('<div class="col s12 center-align"></div>');
   const title = $('<h2 class="h2-pokemon">'+name+'</h2>');
@@ -21,7 +21,6 @@ const ModalPokemon = (pokemonSelected, name, select) => {
   const item5 =$('<div class="col s5"><p>Sexo:</p><p></p></div>');
   const tipo = $('<div class="col s12"><h6>Tipo:</h6></div>');
   const debilidad = $('<div class="col s12"><h6>Debilidad:</h6></div>');
-  const boxOrange = $('<div class="col s3 box-orange">fuego</div>');
 
   contentTitle.append(title);
   contentTitle.append(close);
@@ -33,7 +32,7 @@ const ModalPokemon = (pokemonSelected, name, select) => {
   datosPokemon.append(item5);
   contentInfo.append(datosPokemon);
   tipo.append(tipos);
-  debilidad.append(boxOrange);
+  debilidad.append(debilidades);
   contentInfo.append(tipo);
   contentInfo.append(debilidad);
   modalContent.append(contentTitle);
