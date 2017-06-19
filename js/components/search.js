@@ -34,7 +34,7 @@ const PokeItem = (pokemon, update) => {
   const contImg = $('<div class="col s3 box"></div>');
   const div = $('<div class = box-gray></div>');
   const divImg = $('<div class="box-img"></div>');
-  const img = $(`<img src='http://serebii.net/art/th/${pokemon.entry_number}.png' class="responsive-img"/>`);
+  const img = $(`<img src='https://serebii.net/art/th/${pokemon.entry_number}.png' class="responsive-img"/>`);
   const divInfo = $('<div class="div-absolute responsive-img"></div>');
   const icon1 = $('<a href="#modal-pokemon"><img src="icon/pokeball_gray.png" class="icon-pokemon"/></a>');
   const icon2 = $('<img src="icon/valentines-heart.png" class="icon-pokemon"/>');
@@ -60,10 +60,10 @@ const PokeItem = (pokemon, update) => {
     $.getJSON(descriptionURL,function(response){
       state.selectedPokemon = response;
 	   });
-    $.getJSON("http://pokeapi.co/api/v2/pokemon/"+pokemon.entry_number,function(data){
+    $.getJSON("https://pokeapi.co/api/v2/pokemon/"+pokemon.entry_number,function(data){
       $('.modal').append(ModalPokemon(data,name, state.selectedPokemon));
 	   });
-     $.getJSON("http://pokeapi.co/api/v2/type/4/",function(data){
+     $.getJSON("https://pokeapi.co/api/v2/type/4/",function(data){
        state.selectedWeakness = data;
  	   });
   })

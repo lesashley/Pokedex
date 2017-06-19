@@ -6,7 +6,7 @@ const getPokemons = (callback) => {
     callback(null,xhr.response);
   });
 
-  xhr.open('GET','http://pokeapi.co/api/v2/pokedex/1/');
+  xhr.open('GET','https://pokeapi.co/api/v2/pokedex/1/');
   xhr.responseType = 'json';
   xhr.send();
 }
