@@ -22,7 +22,8 @@ $( _ => {
     const root = $("#root");
     state.pokemon=data;
     render(root,data);
+    $('.pre-load').hide('slow');
+    $('#root').show();
   });
   $('.modal').modal();
-
 })

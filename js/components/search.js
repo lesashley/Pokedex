@@ -2,8 +2,8 @@ const Search = (update) => {
   const section = $('<section class="container"></section>');
   const containerInput = $('<div class="row box-input"></div>');
   const icon = $('<i class="material-icons search">search</i>');
-  const divInput = $('<div class ="col s6"></div>');
-  const input = $('<input type="text" class="n">');
+  const divInput = $('<div class ="col s6 "></div>');
+  const input = $('<input type="text" class="input-search">');
   const divSpan = $('<div class ="col s6 right"></div>');
   const span = $('<span class="az">A - Z</span>');
   const containerImg = $('<div class="row img"></div>');
@@ -31,7 +31,7 @@ const Search = (update) => {
 }
 
 const PokeItem = (pokemon, update) => {
-  const contImg = $('<div class="col s3 box"></div>');
+  const contImg = $('<div class="col m3 s6 box"></div>');
   const div = $('<div class = box-gray></div>');
   const divImg = $('<div class="box-img"></div>');
   const img = $(`<img src='https://serebii.net/art/th/${pokemon.entry_number}.png' class="responsive-img"/>`);
